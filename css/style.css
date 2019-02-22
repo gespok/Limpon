@@ -1,0 +1,149 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#7581a1;
+    font-size: 16px;
+    line-height: 26px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 80px;
+    font-weight: 600;
+    color:#192b59;
+}    
+h2{
+    color:#192b59;
+    font-weight:600;
+    font-size:50px;
+    line-height:60px;
+}
+.nav{
+    font-size:12px;
+    font-weight: bold;
+    color: #8b98ba;
+    text-transform: uppercase;
+    
+}
+.btn-free{
+    color:#fff;
+    background-color:#1085e4;
+    font-weight: 400;
+}
+.grid h2{
+    font-size:40px;
+    font-weight: bold;
+    color:#192b59;
+}
+.grid h2 span{
+    font-size: 14px;
+    color:#60aeed;
+    display:block;    
+}
+.grid-item h3{
+    font-size: 20px;
+    color:#192b59;
+    font-weight:600;
+}
+.grid-item a{
+    color:#1085e4;
+    font-size:14px;
+    font-weight: 600;
+}
+.subscribe-form h2{
+    color:#fff;
+    font-size:50;
+    font-weight:400;
+    }
+.subscribe-form h2 span{
+    color:#00bffe;
+    font-weight:400;
+    font-size:14px;
+    text-transform: uppercase;
+}
+.subscribe-form p{
+    font-size:18px;  
+    font-weight: 400;
+    line-height:28px;
+    color:#dfe8ff; 
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color:#b1c3ee;
+    font-weight:400;
+    font-size:14px;
+    line-height:28px;
+}
+.btn-subscribe{
+    
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color:#1085e4;
+}
+   
+.page-software p{
+    font-weight:regular;
+}
+.page-software dt{
+    color:#5a6789;
+    font-weight: bold;
+}
+
+.page-stat h2 span{
+    display:block;
+    font-size:16px;
+    font-weight: 800;
+    line-height: 60px;
+    color:#1085e4;
+    text-transform: uppercase;
+}
+.page-stat ul li{
+    color:#1085e4;
+    text-transform: uppercase;
+    font-size:16px;
+    line-height: 60px;
+    font-weight: 800;
+}
+.page-stat ul li span{
+    display:block;
+    font-size:60px;
+    line-height:30px;
+    font-weight: bold;
+    color:#bacbdc;
+}
+
+.apps p{
+    font-weight:400;
+}
+.apps p:nth-of-type(2){
+    font-weight:400;
+    text-transform: uppercase;
+    color:#c4d2dd;
+    letter-spacing: 2px;
+}
+.btn-analytics{
+    font-weight:bold;
+    font-size:12px;
+    line-height: 90px;
+    letter-spacing: 2px;
+    color:#fff;
+    background-color:#1085e4;
+    }
+ .btn-control{
+    font-weight:bold;
+    font-size:12px;
+    line-height: 90px;
+    letter-spacing: 2px;
+    color:#fff;
+    background-color:#1085e4;
+ }   
+ .page-screen h2 span{
+     display:block;
+    color:#1085e4;
+    font-weight:800;
+    font-size:18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+ }
