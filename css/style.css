@@ -4,22 +4,66 @@ body{
     font-size: 16px;
     line-height: 26px;
 }
+.wrap{
+    max-width: 1110px;
+    margin: 0 auto;
+}
 a{
     text-decoration: none;
 }
 h1{
     font-size: 80px;
     font-weight: 600;
-    color:#192b59;
+    color: #192b59;
+    max-width: 540px;
+    line-height: 90px;
+    letter-spacing: -2.5px;
+    margin-bottom: 65px;
 }    
-h2{
+.title-h2{
+    font-size: 50px;
+    font-weight: 600;
     color:#192b59;
-    font-weight:600;
-    font-size:50px;
-    line-height:60px;
+    margin: 0 auto;
 }
-.nav{
+.title-h2 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 60px;
+    color: #1085e4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: -8px;
+}
+.title-40{
+    font-size: 40px;
+    letter-spacing: -1.1px;
+    font-weight: 600;
+    color:#192b59;
+    line-height: 1.2;
+}
+.title-40 span{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+}
+
+.page-stat .title-h2, .page-screen .title-h2{
+    text-align: center;
+    margin:0 auto;
     
+}
+.page-screen .title-h2{
+    max-width:500px;    
+}
+
+.nav{
+    display: flex;
     font-size:12px;
     font-weight: bold;
     color: #8b98ba;
@@ -27,9 +71,13 @@ h2{
     list-style-type:none;
     margin: 0;
     padding: 0;
-    
 }
-
+.nav>li{
+    padding:0 15px;
+}
+.nav-item{
+    color: #8b98ba;
+}
 .btn-primary{
     color: #fff;
     font-size: 12px;
@@ -141,28 +189,7 @@ input[type="email"]::-webkit-input-placeholder {
     font-weight: bold;
 }
 
-.page-stat h2 span{
-    display:block;
-    font-size:16px;
-    font-weight: 800;
-    line-height: 60px;
-    color:#1085e4;
-    text-transform: uppercase;
-}
-.page-stat ul li{
-    color:#1085e4;
-    text-transform: uppercase;
-    font-size:16px;
-    line-height: 60px;
-    font-weight: 800;
-}
-.page-stat ul li span{
-    display:block;
-    font-size:60px;
-    line-height:30px;
-    font-weight: bold;
-    color:#bacbdc;
-}
+
 
 .apps p{
     font-weight:400;
@@ -195,5 +222,107 @@ input[type="email"]::-webkit-input-placeholder {
     font-weight:800;
     font-size:18px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3.6px;
  }
+ .list-stat{
+     display:flex;
+     list-style-type: none;
+     justify-content: space-around;
+     margin-top: 73px;
+ }
+ .list-stat>li{
+     font-size: 12px;
+     font-weight: 700;
+     color:#1085e4;
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 2.7px;
+ }
+ .list-stat>li>span{
+    display: block;
+    font-size: 60px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #bacbdc;
+    margin-bottom: 23px;
+    letter-spacing: 0;
+ }
+.screen{
+    margin-top: 36px;
+    margin-bottom: -7px;
+}
+.box-price{
+    display:flex;
+    justify-content:space-between;
+    margin-top: 81px;
+}
+.box-price-item{
+    background-color:#f5faff; 
+    width: 350px;
+    height: 625px;
+   
+}
+.box-price-item.active{
+    background-color:#192b59; 
+    color:#fff;
+}
+
+.box-price-item ul{
+    list-style-type: none;
+    padding-left:0;
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 28px;
+    margin-bottom: 53px;
+}
+.box-price-item h3 {
+    
+    font-size: 70px;
+    padding-top: 19px;
+    letter-spacing: -1.1px;
+    margin-bottom: -8px;
+}
+
+.box-price-item h3 span {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.box-price-item h3 span:nth-of-type(2) {
+    color: #7b8ab2;
+}
+.box-price-item strong {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2.9px;
+}
+.box-price-item .btn-primary,
+.box-price-item .btn-info {
+    padding: 20px 61px;
+}
+.box-price-item:nth-of-type(1) h3 {
+    color: #000958;
+    margin-bottom: 34px;
+}
+
+.box-price div:nth-of-type(2n+1) strong {
+    color: #0084ff;
+}
+
+.box-price div:nth-of-type(3) h3 {
+    color: #192b59;
+}
+ /*Page*/
+.page-stat, .page-screen{
+    background-color:#edf6ff;
+}
+.page-stat{
+    padding: 97px 0 95px 0;
+}
+.page-plan, .page-screen{
+    text-align: center;
+}
+.page-screen{
+    padding: 97px 0 0 0;
+    margin-top: 30px;
+}
