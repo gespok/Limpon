@@ -20,8 +20,9 @@ h1{
 .title-h2{
     font-size: 50px;
     font-weight: 600;
-    color:#192b59;
+    color:#fff;
     margin: 0 auto;
+    letter-spacing: -1.5px;
 }
 .title-h2 span{
     display: block;
@@ -30,8 +31,9 @@ h1{
     line-height: 60px;
     color: #1085e4;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: -8px;
+    letter-spacing: 1.8px;
+    margin-bottom: 15px;
+    margin-top:23px;
 }
 .title-40{
     font-size: 40px;
@@ -194,62 +196,148 @@ height:69px;
     background-color:#94b4cc;
     border:1px solid #94b4cc;
 }
+.grid{
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b c"
+                         "d f g"
+                         "e f g"
+                         "e h h";
+    max-width: 1110px;
+    margin:0 auto;
+    align-content: start;
+    padding-top: 121px;
+    justify-content: space-between;
+}
+.grid-title{
+    grid-area: a;
+    
+    
+}
+.grid-item-1{
+    grid-area: b;
+}
+.grid-item-2{
+    grid-area: c;
+}
+.grid-item-3{
+    grid-area: d;
+}
+.grid-item-4{
+    grid-area: e;
+}
+.grid-item-5{
+    grid-area: f;
+}
+.grid-item-6{
+    grid-area: g;
+}
+.grid-text{
+    grid-area: h;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 26px;
+    color:#7581a1;
+    margin-left: 54px;
+    
+}
+.grid-text p:last-child{
+    color:#1085e4;
+}
+.grid-text p:last-child span{
+font-weight:bold;
+color:#192b59;
+}
 .grid h2{
     font-size:40px;
     font-weight: bold;
     color:#192b59;
+    max-width: 260px;
 }
 .grid h2 span{
     font-size: 14px;
     color:#60aeed;
     display:block;    
 }
+.grid-item{
+    text-align:center;
+    box-shadow: 0 0 5px #f4f4f4;
+    padding: 60px 10px 52px 10px;
+    margin: 0px 15px 30px 20px;
+}
 .grid-item h3{
     font-size: 20px;
     color:#192b59;
     font-weight:600;
+    margin-bottom: 18px;
 }
 .grid-item a{
     color:#1085e4;
     font-size:14px;
     font-weight: 600;
 }
+.grid-icon{
+    background-repeat: no-repeat;
+    display:block;
+    margin:0 auto 36px;
+
+}
+.grid-icon-1{
+    background-image: url(../img/icon-document.png);
+    width:73px;
+    height: 79px;
+}
+.grid-icon-2{
+    background-image: url(../img/icon-custom.png);
+    width: 89px;
+    height: 85px;
+}
+.grid-icon-3{
+    background-image: url(../img/icon-mobile.png);
+    width: 79px;
+    height: 82px;
+}
+.grid-icon-4{
+    background-image: url(../img/icon-easy.png);
+    width: 103px;
+    height: 92px;
+}
+.grid-icon-5{
+    background-image: url(../img/icon-design.png);
+    width: 85px;
+    height: 90px;
+}
+.grid-icon-6{
+    background-image: url(../img/icon-online.png);
+    width: 100px;
+    height: 87px;    
+}
+
 
 .subscribe-form h2{
-    color:#fff;
-    font-size:50px;
+    color: #fff;
+    font-size: 50px;
     line-height: 26px;
-    font-weight:600;
+    font-weight: 600;
     letter-spacing: -1.5px;
     }
 .subscribe-form h2 span{
     display: block;
-    color:#00bffe;
-    font-weight:800;
-    font-size:14px;
+    color: #00bffe;
+    font-weight: 800;
+    font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
+    letter-spacing: 2.9px;
+    margin-bottom: 31px;
 }
 .subscribe-form p{
-    margin-top: 44px;
-    font-size:18px;  
+    margin-top: 45px;
+    font-size: 18px;
     font-weight: 400;
-    line-height:28px;
-    color:#dfe8ff; 
+    line-height: 28px;
+    color: #fff;
     width: 433px;
-}
-.subscribe-form form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 8px 6px 21px;
-    border:2px solid #b1c3ee;
-    width:540px;
-    border-radius: 36px;
-    box-sizing: border-box;
-    margin-top: 37px;
 }
 
 input[type="email"]::-webkit-input-placeholder {
@@ -257,7 +345,6 @@ input[type="email"]::-webkit-input-placeholder {
     font-weight:400;
     font-size:14px;
     line-height:28px;
-    
     padding-left: 17px;
 }
 input{
@@ -272,31 +359,80 @@ input{
     text-transform: uppercase;
     background-color:#1085e4;
 }
-.subscribe-form button.btn-primary {
-    padding: 19px 46px;
-    letter-spacing: 3.8px;
-}
+
  .robot{
      position: absolute;
      background: url(../img/robot.png) no-repeat;
      width:397px;
      height:468px;
-     top:-88px;
+     top:-46px;
      right:0;
      filter: grayscale(100%);
  }  
  .page-subscribe .wrap{
      position: relative;
  }
-.page-software p{
-    font-weight:regular;
+ .box-subscribe{
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .box-subscribe-text{
+     font-size: 18px;
+     max-width:437px;
+     margin-top:45px;
+
+ } 
+ .box-subscribe-user{
+     position: relative;
+     margin-top:40px;
+ }
+ .box-subscribe-user input{
+     border:2px solid #3f5cb1;
+     border-radius: 45px;
+     font-size:14px;
+     background-color: transparent;
+     padding: 25px 230px 25px 40px;
+     display:block;
+     width:100%;
+     box-sizing: border-box;
+     color:#fff;
+ }
+ .box-subscribe-user .btn-primary{
+    position:absolute;
+    top:9px;
+    right:8px;
+    padding:17px 50px;
+}    
+ .box-subscribe-user input:focus, .box-subscribe-user .btn-primary:focus{
+     outline: none;
+ }
+ .box-subscribe-child{
+     flex-basis:49%;
+ }
+ 
+.box-subscribe-user input::-webkit-input-placeholder {
+    padding:0;
+    color:#b1c3ee;}
+.box-subscribe-user input::-moz-placeholder{
+    padding:0;
+    color:#b1c3ee;}
+    .box-subscribe-user input:-moz-placeholder{
+        padding:0;
+    color:#b1c3ee;}
+.box-subscribe-user input:-ms-input-placeholder{
+    padding:0;
+    color:#b1c3ee;}
+
+ 
+
+ .page-software p{
+    font-weight:400;
 }
 .page-software dt{
     color:#5a6789;
     font-weight: bold;
 }
-
-
 
 .apps p{
     font-weight:400;
@@ -446,6 +582,7 @@ input{
     margin-top: 30px;
 }
 .page-subscribe{
+    color:#fff;
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
