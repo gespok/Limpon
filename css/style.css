@@ -205,9 +205,11 @@ height:69px;
                          "e h h";
     max-width: 1110px;
     margin:0 auto;
-    align-content: start;
-    padding-top: 121px;
-    justify-content: space-between;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 120px;
+    
+    
 }
 .grid-title{
     grid-area: a;
@@ -238,8 +240,7 @@ height:69px;
     font-size:16px;
     line-height: 26px;
     color:#7581a1;
-    margin-left: 54px;
-    
+    margin: 35px 0px 101px 15px;
 }
 .grid-text p:last-child{
     color:#1085e4;
@@ -249,21 +250,23 @@ font-weight:bold;
 color:#192b59;
 }
 .grid h2{
-    font-size:40px;
+    font-size: 40px;
     font-weight: bold;
-    color:#192b59;
+    color: #192b59;
     max-width: 260px;
+    margin: 0;
+    margin-left: -8px;
 }
 .grid h2 span{
     font-size: 14px;
-    color:#60aeed;
-    display:block;    
+    color: #60aeed;
+    display: block;
+    margin-bottom: 18px;   
 }
 .grid-item{
     text-align:center;
     box-shadow: 0 0 5px #f4f4f4;
-    padding: 60px 10px 52px 10px;
-    margin: 0px 15px 30px 20px;
+    padding: 60px 55px 0px 55px;
 }
 .grid-item h3{
     font-size: 20px;
