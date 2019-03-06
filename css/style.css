@@ -279,7 +279,7 @@ color:#192b59;
 }
 .grid-item{
     text-align:center;
-    box-shadow: 0 0 5px #f4f4f4;
+    box-shadow:0 9px 20px #f4f4f4;
     padding: 60px 55px 0px 55px;
 }
 .grid-item h3{
@@ -597,7 +597,7 @@ a.video-app{
     flex-basis: 55%;
 }
 .page-control .page-control-text{
-    margin-bottom: 51px;
+    margin-bottom: 56px;
     margin-top: -4px;
 }
 .page-control .btn-primary{
@@ -691,14 +691,54 @@ a.video-app{
 .box-price div:nth-of-type(3) h3 {
     color: #192b59;
 }
+.box-clients{
+    display: flex;
+    justify-content: space-between;  
+    margin-top:63px;  
+}
+.box-clients-item{
+    background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size:14px;
+    box-shadow:0 9px 20px #f4f4f4;
+}
+.box-clients-item p{
+    margin-bottom:4px
+}
+.box-clients-item .name{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+}
+.box-clients-item .position{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1085e4;
+    font-weight: 700;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+.box-info{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-info>div{
+    padding-left:17px;
+}
  /*Page*/
  .page-header{
      background-image: url(../img/header-bg.png);
      background-repeat: no-repeat;
      background-size: cover;
      padding: 53px 0 328px 0; 
-     position: relative;   
-     
+     position: relative;    
  }
  .page-company{
      background:url(../img/brand-bg.png) no-repeat;
@@ -761,5 +801,29 @@ a.video-app{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 0 0 0;
+    padding: 121px 0 107px 0;
+}
+.page-clients{
+    position:relative;
+    margin-top: 119px;
+    padding: 44px 0 0 0;
+    
+}
+.page-clients::before{
+    position: absolute;
+    content:'';
+    display: block;
+    width:100%;
+    height: 100%;
+    background-image:url(../img/vector.svg);
+    background-repeat: no-repeat;
+    left: 46px;
+    top:0;
+    z-index:-1;
+}
+.page-clients .title-40{
+    color:#fff;
+}
+.page-clients .title-40 span{
+    color:#85c8ff;
 }
