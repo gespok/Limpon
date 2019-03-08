@@ -635,10 +635,11 @@ a.video-app{
     justify-content:space-between;
     margin-top: 81px;
 }
+
 .box-price-item{
     background-color:#f5faff; 
-    width: 350px;
-    height: 625px;
+    flex-basis: 32%;
+    padding-bottom: 96px;
    
 }
 .box-price-item.active{
@@ -732,6 +733,53 @@ a.video-app{
 .box-info>div{
     padding-left:17px;
 }
+.box-team{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 138px;
+}
+.box-team-item{
+    position: relative;
+    background-color: #fff;
+    flex-basis:31.5%;
+    box-shadow:0 5px 6px #f4f4f4;
+    padding: 193px 0 40px 0;
+}
+.box-team-item .position{
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#1a88e1;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 15px;
+    letter-spacing: 2.8px;
+}
+.box-team-item .name{
+    font-size: 26px;
+    color:#192b59;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: -0.9px;
+}
+.box-team-item .avatar{
+    position: absolute;
+    top:-86px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+.box-team-item .btn-more{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin:0 auto;
+    background-image: url(../img/btn-more.png);
+    background-repeat: no-repeat;
+    border:none;
+}
+.box-team-item .btn-more:focus{
+    outline: none;
+}
  /*Page*/
  .page-header{
      background-image: url(../img/header-bg.png);
@@ -758,6 +806,9 @@ a.video-app{
 
 .page-stat{
     padding: 129px 0 97px 0;
+}
+.page-plan{
+    padding: 81px 0 121px 0;
 }
 .page-plan, .page-screen{
     text-align: center;
@@ -821,9 +872,16 @@ a.video-app{
     top:0;
     z-index:-1;
 }
-.page-clients .title-40{
+.page-clients .title-40, .page-team .title-40{
     color:#fff;
 }
-.page-clients .title-40 span{
+.page-clients .title-40 span, .page-team .title-40 span{
     color:#85c8ff;
+}
+.page-team{
+    text-align: center;
+    background-image:url(../img/team-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 83px 0 0 0;
 }
