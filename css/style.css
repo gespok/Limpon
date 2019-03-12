@@ -871,6 +871,18 @@ a.video-app{
     background-size: contain;
     
 }
+.intro{
+    color:rgba(0,0,0,0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    left:0;
+    right:0;
+    text-align: center;
+    top:40px;
+    margin:0;
+}
 
  /*Page*/
  .page-header{
